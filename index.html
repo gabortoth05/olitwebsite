@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="css/style.css">
 <title>Title</title>
 
+
+
+
 <style>
 
 
@@ -22,7 +25,7 @@
     <!-- Navigation Section -->
 <!--<div id="header-sticky-wrapper" class="sticky-wrapper" >-->
     
-	<nav class="navbar navbar-expand-sm bg-light sticky-top">   
+	<nav class="navbar navbar-expand-sm bg-light sticky-top navbar-fixed-top">   
         <div class="container">
             <a class="navbar-brand" href="#">
                   <img src="img/logo/logo.png" class="logo" alt="">
@@ -32,16 +35,16 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-padding">
                       <a class="nav-link" href="#">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-padding">
                       <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-padding">
                       <a class="nav-link" href="#">Realization</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-padding">
                       <a class="nav-link" href="#">Contact</a>
                     </li>
               </ul>
@@ -340,7 +343,11 @@
       </div>
 
       <div class="container section-margin-top" >
-
+             <!-- Section Title -->
+            <div class="section-title">
+            <h3>Our best Partners</h3>
+                
+            </div>
         <div class="card-columns">
             
             <div class="card cardBg">
@@ -503,5 +510,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    /*Scroll function*/
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+    
+    </script>
 </body>
 </html>
