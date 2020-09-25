@@ -243,7 +243,13 @@ float: left;
 /*---------------------------------------
 Service section              
 -----------------------------------------*/
+.shadow-box{
+    box-shadow: 2px 2px 5px;
+}
 
+.service-box{
+    height: 250px !important;
+}
 
 .servicesBox{
 
@@ -335,6 +341,9 @@ color:#fff;
 
 #practicearea .btn{background:#444; color:#fff; padding:7px 20px; margin-top:15px;}
 #practicearea .btn:hover{background:#db3636;}
+
+
+/***/
 
 
 /*----------------------------------------
