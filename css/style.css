@@ -1,0 +1,434 @@
+:root {
+    --olive-green: #5cb85c;
+    --svg-color:   #67FF63;
+    --background: #1bbc9b;
+  }
+
+  body{
+    color:#1B5A56;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    
+}
+body h1,h2,h3,h4,h5,h6{
+    color: #2F9C95;
+}
+
+.logo{
+    width: 56px;
+}
+
+.custom-navbar {
+	border: none;
+	margin-bottom: 0;
+	padding: 6px 0;
+	width: 100%;
+}
+
+.sticky-wrapper{
+    width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+.section-title{
+
+    text-align: center;
+
+}
+
+.section-margin-top{
+    margin-top: 6.5rem;
+}
+/*---------------------------------------
+Jumbotron
+----------------------------------------*/
+.welcomeText{
+    color: #fff !important;
+}
+#home {
+	background-color: var(--background);
+    /*background: url("../img/backgrounds/welcome_section_bg.png") no-repeat top;*/
+    background: url("../img/backgrounds/office.jpg") no-repeat top;
+	background-size: cover;
+	background-position: center center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #ffffff;
+	height: 100vh;
+	position: relative;
+	text-align: left;
+}
+
+#home .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.8);
+}
+
+
+
+/*---------------------------------------
+About us         
+-----------------------------------------*/
+.howitwrap {
+position: relative;
+}
+.howitwrap .section-title {
+text-align: left;
+padding-bottom: 15px;
+}
+.howitwrap .section-title h3:after {
+left: 0;
+margin-left: 0
+}
+.howitwrap .section-title h3:before {
+left: 26px;
+margin-left: 0
+}
+
+.aboutUsBox{
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+.howlist {
+list-style: none;
+margin-bottom: 20px;
+}
+.howlist li {
+margin-top: 20px;
+}
+.howlist li .howbox:after {
+display: table;
+clear: both;
+content: '';
+}
+.howlist li .iconcircle {
+margin-bottom: 15px;
+float: left;
+margin-right: 30px;
+width: 70px;
+height: 70px;
+border-radius: 5px;
+border:1px solid #ddd;
+text-align: center;
+line-height: 50px;
+}
+.howlist li .iconcircle i {
+font-size: 24px;
+color: #db3636;
+margin-top: 22px;
+display: block;
+}
+.howlist li h4 {
+font-size: 18px;
+font-weight: 700;
+color: #444;
+margin-bottom: 5px;
+}
+.howlist li p {
+font-size: 16px;
+line-height: 24px;
+color: #555;
+}
+.fullimg {
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center center;
+float: left;
+}
+
+.contentBox{
+    position: relative;
+}
+
+.aboutUsMarker{
+
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    top: -33px;
+    left: -10px;
+    z-index: 0;
+    border-radius: 0 0 15px 15px;
+    /*background-color: #03A9F4;*/
+    background-color: #78BC4A;
+
+}
+
+.markerBg2{
+    /*background-color: #FF5722;*/
+    background-color: #78BC4A;
+
+}
+
+.markerBg3{
+    background-color: #78BC4A;
+}
+
+
+
+.aboutUsMarkerText{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    background: #ffffff;
+    border-color: #7d60f9;
+    font-size: 18px;
+    color: #13287e;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 20px !important;
+    transition: .3s ease;
+}
+
+.aboutUsText{
+    padding-left: 3.5rem;
+}
+
+/*---------------------------------------
+Service section              
+-----------------------------------------*/
+
+
+.servicesBox{
+
+    position: relative;
+    z-index: 1;
+    padding: 50px 15px 30px;
+    background: #fff;
+    margin-bottom: 30px;
+    border: 1px solid var(--olive-green);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.servicesBox h6{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.servicesIcon{
+    margin-bottom: 20px;
+min-height: 56px;
+position: relative;
+display: inline-block;
+}
+
+.servicesIcon i{
+    font-size: 2.5rem;
+}
+
+.servicesIcon i::after{
+    content: '';
+position: absolute;
+width: 70px;
+height: 70px;
+right: -15px;
+top: -15px;
+z-index: -1;
+background: #d2f6f5;
+opacity: .5;
+border-radius: 50%;
+transition: .4s ease-in-out;
+}
+
+#practicearea .service-thumb, #service .service-thumb {
+margin-bottom: 30px;
+margin-top: 20px;
+}
+#practicearea .service-thumb h4 {
+color: #2f9c95;
+font-size:20px;
+}
+#service .thumb-icon {
+border:1px solid #2f9c95;
+width: 70px;
+height: 70px;
+border-radius:5px;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 20px;
+transition: ease-in-out 0.3s;
+-webkit-transition: ease-in-out 0.3s;
+-moz-transition: ease-in-out 0.3s;
+-ms-transition: ease-in-out 0.3s;
+color: #db3636;
+}
+#service .thumb-icon{}
+.thumb-img {
+overflow:hidden;
+}
+
+#service .fa {
+font-size: 24px;
+margin-top: 22px;	
+}
+
+#service .service-thumb:hover .thumb-icon, .service-thumb:hover img {
+-ms-transform: scale(1.2) rotate(5deg);
+-moz-transform: scale(1.2) rotate(5deg);
+-webkit-transform: scale(1.2) rotate(5deg);
+-o-transform: scale(1.2) rotate(5deg);
+transform: scale(1.2) rotate(5deg);
+background:#db3636;
+color:#fff;
+}
+
+
+
+#practicearea .btn{background:#444; color:#fff; padding:7px 20px; margin-top:15px;}
+#practicearea .btn:hover{background:#db3636;}
+
+
+/*----------------------------------------
+Partners
+-----------------------------------------*/
+.cardBg{
+    background-color: #e8fafa;
+}
+
+
+/*---------------------------------------
+Contact section              
+-----------------------------------------*/
+#contact {
+position: relative;
+}
+.contact-form {
+z-index: 10;
+position: relative;
+}
+.contact-form h4 {
+text-align: left;
+color: #333;
+font-size: 36px;
+margin: 0 0 30px 0;
+text-align: center;
+text-transform: uppercase;
+font-weight: 700;
+}
+.contact-form h4 span {
+color: #db3636;
+font-weight: 400;
+}
+.contact-form .form-control {
+border-color: transparent;
+border-radius: 4px;
+box-shadow: none;
+font-size: 18px;
+margin-top: 10px;
+margin-bottom: 10px;
+-webkit-transition: all ease-in-out 0.4s;
+transition: all ease-in-out 0.4s;
+}
+.contact-form input {
+border: 2px solid #f0f0f0 !important;
+height: 55px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+border-color: #db3636 !important;
+}
+.contact-form textarea {
+background: #fff;
+border: 2px solid #f0f0f0 !important;
+}
+.contact-form button#submit {
+background-color: #db3636;
+border: none;
+border-radius: 4px;
+color: #ffffff;
+padding: 10px 30px;
+height: auto;
+width: 100%;
+text-transform: uppercase;
+}
+.contact-form button#submit:hover {
+background: #555;
+color: #ffffff;
+}
+
+.contact {	
+margin-bottom: 30px;
+border-bottom:1px solid #ddd;
+padding-bottom:30px;	
+text-align:left;
+}
+.contact > span {
+    color: #1b5a56;
+    float: left;
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #9cd49c;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 5px;
+}
+.inner-page .fa-home:before {
+content: "\f015";
+}
+.information {
+margin-top: 5px;
+padding-left:80px;
+}
+.information > strong {
+color: #000;
+display: table;
+font-size: 16px;
+font-weight: 700;
+margin-bottom: 5px;
+text-transform: uppercase;
+}
+.information > p {
+line-height: 22px;
+margin: 0;
+}
+
+#map {
+width: 100%;
+height: 300px;
+border: none;
+display: block;
+pointer-events: none;
+}
+.frmap {
+margin-top: 10px;
+}
