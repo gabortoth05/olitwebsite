@@ -34,8 +34,9 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .nav-item-padding a:hover{
-    color: #333;
-    text-shadow: 2px 2px 10px #333
+    text-decoration: underline;
+    padding:2px;
+    transition: padding 100ms linear;
 }
 
 .sticky-wrapper{
@@ -49,6 +50,7 @@ z-index: 1000;
 .navbar-fixed-top.scrolled {
     background-color: #e8fafa !important;
     box-shadow: 2px 2px 10px #333;
+    transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
