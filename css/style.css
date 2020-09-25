@@ -342,6 +342,17 @@ Partners
 -----------------------------------------*/
 .cardBg{
     background-color: #e8fafa;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.cardBg-blue{
+    background-color: #55dbef;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.cardBg:hover{
+    box-shadow: 2px 2px 15px #333;
+    transition: box-shadow 300ms linear;
 }
 
 
