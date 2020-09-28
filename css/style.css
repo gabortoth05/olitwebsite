@@ -22,6 +22,40 @@ body {
     width: 56px;
 }
 
+.contactUsButton{
+    cursor: pointer;
+    width: 68px;
+    position: fixed;
+    top: 40%;
+    right: 0px;
+    display: block;
+    z-index: 6001;
+    background-color: #78BC4A !important;
+    -webkit-border-top-left-radius: 100px !important;
+    -webkit-border-bottom-left-radius: 100px !important;
+    -moz-border-radius-topleft: 100px !important;
+    -moz-border-radius-bottomleft: 100px !important;
+    border-top-left-radius: 100px !important;
+    border-bottom-left-radius: 100px !important;
+    -webkit-box-shadow: -2px -1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px -1px 5px -1px rgba(0,0,0,0.75);
+    color: #fff;
+    height: 136px;
+}
+
+.contactForm{
+    position: fixed;
+    top: 40%;
+    background-color: white;
+    width: 300px;
+    z-index: 6001;
+    right: -300px;
+    padding: 30px;
+    box-shadow: 2px 5px 15px #333;
+    border-radius: 5px;
+}
+
 .custom-navbar {
 	border: none;
 	margin-bottom: 0;

@@ -21,6 +21,21 @@
 </head>
 <body>
 
+    <button id="contactUsButton" class="contactUsButton" onclick="openContact()">
+        <i class="fas fa-envelope-open" style="font-size: 2rem;" aria-hidden="true"></i>
+    </button>
+    <div id="contactContainer" class="contactForm" aria-label="false">
+        <h6>Contact</h6>
+        <p>Olivier IT Services Ltd.</p>
+        <p>21 Laky Adolf Street, 1147 Budapest</p>
+        <p>Hungary</p>
+        <p>+36 30 708 4661 (Hungary)</p>
+        <p>+33 781 29 40 86 (France)</p>
+        <p>Email: luc.olivier@olivier-it.com</p>
+        <hr />
+        <button class="btn btn-success">Send an E-mail</button>
+    </div>
+
 
     <!-- Navigation Section -->
 <!--<div id="header-sticky-wrapper" class="sticky-wrapper" >-->
@@ -28,7 +43,7 @@
 	<nav  class="navbar navbar-expand-sm bg-light sticky-top navbar-fixed-top">   
         <div class="container">
             <a class="navbar-brand" href="#">
-                  <img src="img/logo/logo.png" class="logo" alt="">
+                  <img src="img/logo/logo.png" class="logo" href="#home" alt="">
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -615,7 +630,7 @@
   <section id="footer">
     <div class="container">
         <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-2">
                 <h5>Quick links</h5>
                 <ul class="list-unstyled quick-links">
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
@@ -625,7 +640,7 @@
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-2">
                 <h5>Quick links</h5>
                 <ul class="list-unstyled quick-links">
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
@@ -635,7 +650,7 @@
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-2">
                 <h5>Quick links</h5>
                 <ul class="list-unstyled quick-links">
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
@@ -644,6 +659,31 @@
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Get Started</a></li>
                     <li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
                 </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-6" >
+                <h5>Contact Now</h5>
+                <div class="contact-now">
+                    <div class="contact"> <span><i class="fa fa-home"></i></span>
+                      <div class="information"> <strong>Address:</strong>
+                        <p>1100 lorem, New Ispum, Dolor amet sit 12301</p>
+                      </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="contact"> <span><i class="fa fa-envelope"></i></span>
+                      <div class="information"> <strong>Email Address:</strong>
+                        <p>example@example</p>
+                        <p>example@example</p>
+                      </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="contact"> <span><i class="fa fa-phone"></i></span>
+                      <div class="information"> <strong>Phone No:</strong>
+                        <p>+12 345 67 09</p>
+                        <p>+12 345 67 09</p>
+                      </div>
+                    </div>
+                    <!-- Contact Info --> 
+                  </div>
             </div>
         </div>
         <div class="row">
@@ -667,6 +707,41 @@
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
     });
+
+    function openContact(){
+
+        console.log("onClick");
+
+        let oContactButton = document.getElementById("contactUsButton");   
+        let oContactForm    = document.getElementById("contactContainer");
+        let nPos = 0;
+
+        if(oContactForm.getAttribute("aria-label") === "true"){
+
+            oContactButton.style.right = 0 + 'px'; 
+            oContactForm.style.right   = -300 + 'px';
+
+            oContactForm.setAttribute("aria-label","false");
+        }
+        else{
+            let oInterval = setInterval(frame, 2);
+            function frame() {
+                
+                if (nPos == 300) {
+                    clearInterval(oInterval);
+                    oContactForm.setAttribute("aria-label","true");
+                }
+                else {
+                    nPos += 5; 
+                    oContactButton.style.right = nPos + 'px'; 
+                    oContactForm.style.right   = -300 + nPos + 'px';
+                }
+                
+                
+            }
+        }
+
+    };
 
     $(document).ready(function(){
       // Add scrollspy to <body>
