@@ -68,7 +68,17 @@ Jumbotron
 ----------------------------------------*/
 .welcomeText{
     color: #fff !important;
+    font-size: 4.5rem;
 }
+.welcomeText-sub{
+    font-size: 2.5rem !important;
+}
+
+.call-to-action{
+    padding: 0.625rem;
+    font-size: 25px;
+}
+
 #home {
 	background-color: var(--background);
     /*background: url("../img/backgrounds/welcome_section_bg.png") no-repeat top;*/
