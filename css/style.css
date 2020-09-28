@@ -14,6 +14,10 @@ body h1,h2,h3,h4,h5,h6{
     color: #2F9C95;
 }
 
+body {
+    position: relative; 
+  }
+
 .logo{
     width: 56px;
 }
@@ -304,11 +308,11 @@ border-radius: 50%;
 transition: .4s ease-in-out;
 }
 
-#practicearea .service-thumb, #service .service-thumb {
+#realization .service-thumb, #service .service-thumb {
 margin-bottom: 30px;
 margin-top: 20px;
 }
-#practicearea .service-thumb h4 {
+#realization .service-thumb h4 {
 color: #2f9c95;
 font-size:20px;
 }
@@ -348,8 +352,8 @@ color:#fff;
 
 
 
-#practicearea .btn{background:#444; color:#fff; padding:7px 20px; margin-top:15px;}
-#practicearea .btn:hover{background:#db3636;}
+#realization .btn{background:#444; color:#fff; padding:7px 20px; margin-top:15px;}
+#realization .btn:hover{background:#db3636;}
 
 
 /***/
