@@ -298,6 +298,51 @@ float: left;
 /*---------------------------------------
 Service section              
 -----------------------------------------*/
+
+.realization-button{
+    background-color: transparent;
+    color: #375a56;
+    border-radius: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 2px solid #78bc4a;
+}
+
+
+.realization-button:hover{
+    background-color: #78bc4a;
+    border-left: 2px solid #78bc4a;
+        
+}
+
+.realization-button:active{
+    background-color: #78bc4a;
+    border-left: 2px solid #78bc4a;
+        
+}
+
+.realization-button:focus{
+    background-color: #78bc4a;
+    border-left: 2px solid #78bc4a;
+        
+}
+
+.realization-padding{
+    padding-bottom: 15px;
+}
+
+.custom-caption{
+    background-color: rgba(0,0,0,0.4);
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.custom-caption h3{
+    color: #fff;
+}
+
 .shadow-box{
     box-shadow: 2px 2px 5px;
 }
