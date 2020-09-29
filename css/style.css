@@ -117,6 +117,14 @@ Jumbotron
     font-size: 25px;
 }
 
+.call-to-action a{
+    color: #fff;
+}
+
+.call-to-action a:hover{
+    text-decoration: none;
+}
+
 #home {
 	background-color: var(--background);
     /*background: url("../img/backgrounds/welcome_section_bg.png") no-repeat top;*/
@@ -399,6 +407,7 @@ Partners
 .cardBg{
     background-color: #e8fafa;
     box-shadow: 2px 2px 5px #333;
+    height:385px;
 }
 
 .cardBg-blue{
@@ -411,6 +420,11 @@ Partners
     transition: box-shadow 300ms linear;
 }
 
+.partners-img-align{
+    padding-top: 10%;
+    margin-left: 30px;
+
+}
 
 /*---------------------------------------
 Contact section              
