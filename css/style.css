@@ -145,8 +145,10 @@ Jumbotron
 #home {
 	background-color: var(--background);
     /*background: url("../img/backgrounds/welcome_section_bg.png") no-repeat top;*/
-    background: url("../img/backgrounds/office.jpg") no-repeat top;
+    /*background: url("../img/backgrounds/office.jpg") no-repeat top;*/
+    background: url("../img/backgrounds/IMG_20201001_135917.jpg") no-repeat top;
 	background-size: cover;
+    background-position-y: -270px;
 	background-position: center center;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -160,6 +162,7 @@ Jumbotron
 	height: 100vh;
 	position: relative;
 	text-align: left;
+	background-position-y: -270px;
 }
 
 #home .overlay {
