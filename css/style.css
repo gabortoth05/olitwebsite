@@ -42,6 +42,7 @@ body {
     box-shadow: -2px -1px 5px -1px rgba(0,0,0,0.75);
     color: #fff;
     height: 136px;
+    border: 0px;
 }
 
 .contactForm{
@@ -501,6 +502,15 @@ Partners
 text-justify: none
 }
 
+.navigation-card{
+    color: #345a56 !important;
+    text-decoration: none !important;
+}
+
+.navigation-card a:hover{
+    text-decoration: none !important;
+}
+
 
 /*---------------------------------------
 Contact section              
@@ -678,4 +688,144 @@ margin-top: 10px;
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+
+
+/* ANIMATIONS */
+
+
+/*Animation to change scale - Items will popup from "behind"*/
+.scaleanim{
+    visibility: hidden;
+}
+
+.scale-animation{
+    animation: scale 1s ;
+    animation-timing-function: ease-in;
+    visibility: visible;
+}
+
+@keyframes scale{
+    from{scale: 0.0}
+    to{scale:1.0}
+}
+
+.pulse-animation{
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse{
+    from {box-shadow: -5px 0px 5px #f8f9fa;}
+    to {box-shadow: -6px 0px 10px #3dd481}
+}
+
+
+/* Slide animation, items will slide from the top*/
+.slideanim-Y-Inv{
+    visibility: hidden;
+}
+
+.slide-Y-Inv{
+    animation-name: slide-Y-Inv;
+    -webkit-animation-name: slide-Y-Inv;
+    animation-duration: 1.5s;
+    /* The duration of the animation */
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+@keyframes slide-Y-Inv{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+}
+
+@-webkit-keyframes slide-Y-Inv{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+}
+
+
+/* Slide animation, items will slide from the left*/
+.slideanim-X {visibility:hidden;}
+.slide-X {
+  /* The name of the animation */
+  animation-name: slide-X;
+  -webkit-animation-name: slide-X;
+  /* The duration of the animation */
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  /* Make the element visible */
+  visibility: visible;
+}
+@keyframes slide-X {
+  0% {
+    opacity: 0;
+    transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-X {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+/* Slide animation, items will slide from the right*/
+.slideanim-X-Inv {visibility:hidden;}
+.slide-X-Inv {
+  /* The name of the animation */
+  animation-name: slide-X-Inv;
+  -webkit-animation-name: slide-X-Inv;
+  /* The duration of the animation */
+  animation-duration: 1.0s;
+  -webkit-animation-duration: 1.0s;
+  animation-timing-function: ease-in-out;
+  /* Make the element visible */
+  visibility: visible;
+}
+@keyframes slide-X-Inv {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-X-Inv {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
 }

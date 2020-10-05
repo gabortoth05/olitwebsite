@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <button id="contactUsButton" class="contactUsButton" onclick="openContact()">
+    <button id="contactUsButton" class="contactUsButton pulse-animation" onclick="openContact()">
         <i class="fas fa-envelope-open" style="font-size: 2rem;" aria-hidden="true"></i>
     </button>
     <div id="contactContainer" class="contactForm" aria-label="false">
@@ -99,9 +99,9 @@
 <div class="container">
  <div class="row">
    <div class="col-md-8 col-sm-8">
-     <div class="slide-text">
+     <div class="slide-text slide-Y-Inv">
          <h1 class="welcomeText">Give the Best </h1>
-         <h3 class="welcomeText welcomeText-sub">SAP User eXperience for your Company</h3>
+         <h3 class="welcomeText welcomeText-sub">SAP User eXperience</h3>
          <h4 class="welcomeText welcomeText-sub">with OLIT, the Expert SAP Fiori</h4>
          <button type="button" class="btn btn-success call-to-action"><a href="#contact">Contact Us</a></button>
      </div>
@@ -119,7 +119,7 @@
         <div  class="container" >
 
              <!-- title start -->
-             <div class="section-title">
+             <div class="section-title slideanim-Y-Inv">
                 <h3>About <span>Us</span></h3>
                  <p>
                     Olivier IT Services is a French-Hungarian company, based in Paris and Budapest, 
@@ -137,7 +137,7 @@
                  <div class="col-md-6 col-sm-6">
                      <!--<div class="fullimg" style="background-image:url('img/team/olit_team.jpg')"></div>-->
 
-                     <div id="aboutUs" class="carousel slide" data-ride="carousel">
+                     <div id="aboutUs" class="carousel slide scaleanim" data-ride="carousel">
     
                         <!-- Indicators -->
                         <ul class="carousel-indicators">
@@ -151,10 +151,10 @@
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="img/team/olit_team.jpg" alt="Los Angeles" width="800" height="550">
+                            <img src="img/team/olit_team.jpg" alt="Los Angeles" loading="lazy" width="800" height="550">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/team/Ski team.jpg" alt="Chicago" width="800" height="550">
+                            <img src="img/team/Ski team.jpg" alt="Chicago"loading="lazy"  width="800" height="550">
                           </div>
                           <!--<div class="carousel-item">
                             <img src="img/team/Hüttében.jpg" alt="New York" width="800" height="550">
@@ -184,25 +184,20 @@
                         <ul class="howlist">
                           <!--step 1-->
                           <li>
-                            <div class="howbox aboutUsBox">
-                                <div class="contentBox" >
+                            <div class="howbox aboutUsBox slideanim-X">
+                                <div class="contentBox  " >
                                     <!--<div class="iconcircle"><i class="fa fa-gavel" aria-hidden="true"></i></div>-->
                                     <span class="aboutUsMarker"></span>
                                     <div class="aboutUsMarkerText"><i class="fas fa-dumbbell " aria-hidden="true"></i></div>
                                     <h4 class="aboutUsText">Strengths</h4>
                                     <ul style="margin-left:35px">
                                         <li >Implementation of full SAP Fiori Projects: 
-                                            Installation, Configuration, Standard Modifications and Custom Development.</li>
+                                            Installation, Configuration, Extensions and Custom Development.</li>
                                         <li style="margin-top:0px">
-                                            Creation and simplification of SAP User Interface Projects (UI) 
-                                            by following the Tools and Methodology of SAP Fiori, S/4HANA and SCRUM.<br />
-                                            The Target can be simple Web interfaces, 
-                                            SAP Cloud Portal or Mobile Devices (iOS and Android).
+                                            Creation and simplification of SAP User Interface Projects (UI) by following the Tools and Methodology of SAP Fiori, S/4HANA and SCRUM.<br />
+                                            For simple Web interfaces, SAP Cloud Portal or Mobile Devices (iOS and Android).
                                         </li>
                                         
-                                        <li style="margin-top:0px">
-                                            SAP UX Consulting and Expertise on demand
-                                        </li>
                                     </ul>
                                     <p class="aboutUsText"> 
                                         
@@ -214,8 +209,8 @@
                          
                           <!--step 2-->
                           <li>
-                            <div class="howbox aboutUsBox">
-                                <div class="contentBox" >
+                            <div class="howbox aboutUsBox slideanim-X ">
+                                <div class="contentBox " >
                                     <!--<div class="iconcircle"><i class="fa fa-gavel" aria-hidden="true"></i></div>-->
                                     <span class="aboutUsMarker markerBg2"></span>
                                     <div class="aboutUsMarkerText"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
@@ -280,17 +275,17 @@
               <!-- title end -->
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row slideanim-X">
                 <!-- First service-->
                 <div class="col-12 col-md-6 col-lg-6" >
                     <img class="shadow-box" width="100%" height="300px" src="img/services/strategy_olit.jpg" />
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 howbox aboutUsBox service-box" >
+                <div class="col-12 col-md-6 col-lg-6 howbox aboutUsBox service-box " >
                     <h5>SAP Fiori/UX Strategy</h5>
                     <br />
 
                     <ul>
-                        <li>Workshop and high level onsite presentations (SAP S/4HANA, SCP, SAP UI5, SAP Fiori)</li>
+                        <li>Workshops a high level onsite presentations (SAP S/4HANA, SCP, SAP UI5, SAP Fiori)</li>
                         <li>Customer landscape analysis and recommendations</li>
                         <!--<li>Architecture analysis</li>-->
                         <li>Auditing and strategy</li>
@@ -303,7 +298,7 @@
                 </div>
             </div>
             <hr />
-            <div class="row">
+            <div class="row slideanim-X-Inv">
                 <!-- Second service-->
                 <div class="col-12 col-md-6 col-lg-6 howbox aboutUsBox service-box" >
                     <h5>SAP Fiori Installation, Configuration and Support</h5>
@@ -326,7 +321,7 @@
                 </div>
             </div>
             <hr />
-            <div class="row">
+            <div class="row slideanim-X">
                  <!-- Third service-->
                  <div class="col-12 col-md-6 col-lg-6" >
                     <img class="shadow-box" width="100%" height="340px" src="img/services/sapui5_development.jpg" />
@@ -336,7 +331,7 @@
                     <br />
 
                     <ul>
-                        <li>Full SAP UI5/OData Project management (Scrum) and delivery on Customer Systems or with SCP (SAP Web IDE / BAS)</li>
+                        <li>Full SAP UI5/OData Project: From management (Scrum) to delivery usually with SCP (SAP Web IDE / BAS) and Support</li>
                         <li>Development of CDS Views and Fiori Elements, Customized UI5 apps for desktop</li>
                         <li>Development of Mobile apps with HAT and MDK (SAP Mobile Services) for offline and specific Mobile apps</li>
                         <li>Development of SAP Fiori-like apps following the Best Practices</li>
@@ -421,7 +416,7 @@
             <br><br>
           </div>
           
-            <div class="row" >
+            <div class="row slideanim-X-Inv" >
                 <!-- Service 1 -->
                 <div class="col-md-6 col-sm-6">
                     <div class="">
@@ -433,7 +428,6 @@
                               <li data-target="#demo" data-slide-to="1"></li>
                               <li data-target="#demo" data-slide-to="2"></li>
                               <li data-target="#demo" data-slide-to="3"></li>
-                              <li data-target="#demo" data-slide-to="4"></li>
                             </ul>
                             
                             <!-- The slideshow -->
@@ -491,41 +485,41 @@
                      <ul style="list-style-type: none;">
                         <li class="realization-padding">
                                 
-                            <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori1">
+                            <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori1" >
                                 <span>UGAP</span>
                             </button>
-                            
+                            <!--
                             <div id="fiori1" class="collapse">
                                 Following the realization of a POC SAP Cloud Platform for a major public sector buyer whose goal was 
                                 to validate that the SCP would be able to replace in a more modern and more efficient version their SAP Enterprise Portal and by bringing new functionalities.
                                 8 Fiori applications were developed for very specific business processes.
                                 It was requested to use the new S/4 Hana development model with CDS Views, SAP Fiori Elements and BOPF. The applications manage precise processes with alerts and filters, 
                                 visual graphics and BOPF actions triggering updates in the SAP Hana database
-                            </div>
+                            </div>-->
                         </li>
                         <li class="realization-padding">
                             <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori2">
                                 <span>Cash Paris</span>
                             </button>
-                            
+                            <!--
                             <div id="fiori2" class="collapse">
                                 Development of a series of SAP Fiori applications for a VAT refund company at airports. 
                                 The apps were developed in a very short time following the SCRUM Agile methodology between two countries France and Hungary. 
                                 The Fiori apps were developed on SAP Web IDE, deployed on SCP and hosted in SAP Cloud Portal. 
                                 The data and services come from the SAP Hana database of the SCP and SAP By Design.
                                 The project won the 2019 SAP France Quality Golden Award in the Innovation category.
-                            </div>
+                            </div>-->
                         </li>
                         <li class="realization-padding">
                             <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori3">
                                 <span>Alter Buro</span>
                             </button>
-                            
+                            <!--
                             <div id="fiori3" class="collapse">
                                 For a medium-sized client specializing in the sale of office items and furniture, we have redeveloped its commercial intranet. 
                                 More than 15 thumbnails are visible in the SAP Fiori Launchpad including 9 Fiori applications (specific development or extensions of SAP CRM Fiori apps).
                                 The apps are deployed on the SAP Gateway and call data from SAP CRM and SAP ERP.
-                            </div>
+                            </div>-->
                         </li>
                       </ul> 
                   </div>
@@ -533,7 +527,7 @@
             </div>
             <br/>
             <hr />
-            <div class="row">
+            <div class="row slideanim-X">
 
                 <!-- Services 2 -->
                 <div class="col-md-6 col-sm-6">
@@ -549,25 +543,25 @@
                                 <span>IMA (Inter Mutuelle Assistance)</span>
                             </button>
                             
-                            <div id="scp1" class="collapse">
+                            <!--<div id="scp1" class="collapse">
                                 Realization of a POC SAP Cloud Platform (SCP) for a mutual insurer. The goal was to design a call center application for 
                                 recording and tracing insured incidents: the application should be as simple and ergonomic as possible.
                                 A mockup had been made with Wireframe and Angular but the idea was to see if it was possible to do the same or better with Fiori. 
                                 The Fiori model on SCP proved this to be the case by additionally managing multi-session and search from the FLP header (development of a specific plug-in). 
                                 A 5-day SAP UI5 training completed the service to train internal developers.
-                            </div>
+                            </div>-->
                         </li>
                         <li class="realization-padding">
                             <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#scp2">
                                 <span>ERAMET</span>
                             </button>
                             
-                            <div id="scp2" class="collapse">
+                            <!--<div id="scp2" class="collapse">
                                 Participation in the S / 4 Hana (1909) implementation project of Eramet, a world leader in mining and advanced alloy manufacturing. 
                                 Expertise in the SAP UX team: choice of retained apps, development study with different technologies.
                                 Also, development of two SAP UI5 Hybrid (HAT) offline apps for Android, made with SAP Mobile Services from SCP: 
                                 Maintenance management and management of purchase orders and reception in warehouses.
-                            </div>
+                            </div>-->
                         </li>
                     </ul> 
                     </div>
@@ -626,7 +620,7 @@
                <br/>
             <hr />
 
-            <div class="row">
+            <div class="row slideanim-X-Inv">
 
                 <!-- Service 1 -->
                 <div class="col-md-6 col-sm-6">
@@ -673,7 +667,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/realization/lv-mobile-apps.png" alt="" width="600" height="300">
+                                    <img src="img/realization/lv-mobile-apps.png" alt="" width="480px" height="300">
                                     <div class="carousel-caption custom-caption">
                                         <h3>Louis Vuitton</h3>
                                         <p>Mobile applications</p>
@@ -704,38 +698,38 @@
                             <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori1">
                                 <span>Louis Vuitton</span>
                             </button>
-                            
+                            <!--
                             <div id="fiori1" class="collapse">
                                 Participation in the development of Fiori apps as part of a global SAP MM project. 
                                 Two applications for managing requests for shipments and receipts of goods in warehouses, 
                                 one of the apps was designed as a hybrid mobile app that can work offline. 
                                 The applications were developed under SAP Web IDE in SCP and then deployed in the customer's local SAP Gateway.
-                            </div>
+                            </div>-->
                         </li>
                         <li class="realization-padding">
                             <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori2">
                                 <span>ELIS</span>
                             </button>
                             
-                            <div id="fiori2" class="collapse">
+                            <!--<div id="fiori2" class="collapse">
                                 Development of a complete SAP UI5 application for a Call Center.
 The goal was to allow call center agents to make outgoing calls and receive incoming calls with all the useful account details,
 CRM actions, opportunities; with the possibility of selecting the best salesperson, creating an appointment and opportunities with sending attachments.
 The application was developed on SCP and interfaced with SAP C4C and CTI.
-                            </div>
+                            </div>-->
                         </li>
                         <li class="realization-padding">
                             <button type="button" class="btn btn-primary realization-button" data-toggle="collapse" data-target="#fiori3">
                                 <span>Safran ED</span>
                             </button>
-                            
+                            <!--
                             <div id="fiori3" class="collapse">
                                 For a leader in the manufacture of High Tech weapons and in aircraft maintenance, 
                                 we have produced an MRO Cockpit to follow repair orders in SAP UI5. 
                                 The data is stored in an SAP Hana Database. They are requested by Calculation Views and called by
                                  OData services in the SAP Gateway where the app is hosted.
                                 The developments were carried out in SAP Hana Studio and in Eclipse.
-                            </div>
+                            </div>-->
                         </li>
                         </ul> 
                     </div>
@@ -762,76 +756,89 @@ The application was developed on SCP and interfaced with SAP C4C and CTI.
         <div class="card-columns">
             
 
-            <div class="card cardBg cardBg-blue">
-                <div class="card-body text-center">
-                    <div style="height:160px;width:250px" class="partners-img-align">
-                        <img src="img/partners/BearingPoint.png" width="100%" style="margin-top: 40px;"/>
+            <div class="card cardBg cardBg-blue scaleanim">
+                <a href="https://www.bearingpoint.com/en/" target="_blank" class="navigation-card">
+                    <div class="card-body text-center">
+                        <div style="height:160px;width:250px" class="partners-img-align">
+                            <img src="img/partners/BearingPoint.png" width="100%" style="margin-top: 40px;">
+                        </div>
+                        <h6 class="partner-name">Bearingpoint</h6>
+                      <p class="card-text">BearingPoint is a multinational management and technology consulting firm headquartered in Amsterdam, Netherlands. 
+                        It has operations in 23 countries with around 4,600 employees and is one of the largest management consultancies in Europe.</p>
                     </div>
-                    <h6 class="partner-name">Bearingpoint</h6>
-                  <p class="card-text">BearingPoint is a multinational management and technology consulting firm headquartered in Amsterdam, Netherlands. 
-                    It has operations in 23 countries with around 4,600 employees and is one of the largest management consultancies in Europe.</p>
-                </div>
+                </a>
+               
             </div>
 
-            <div class="card cardBg">
-                <div class="card-body text-center">
+            <div class="card cardBg scaleanim">
+                <a href="https://www.duonext.com/" target="_blank" class="navigation-card">
+                    <div class="card-body text-center">
+                        <div style="height:160px;width:250px" class="partners-img-align">
+                            <img src="img/partners/duonext.png" width="100%" />
+                        </div>
+                        
+                        <h6 class="partner-name">Duonext</h6>
+                    <p class="card-text">For more than 10 years, Duonext advises and supports its clients in the design and integration of ERP, 
+                        BPM and business intelligence solutions.</p>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="card cardBg scaleanim">
+                <a href="https://extensi.fr/?lang=en" target="_blank" class="navigation-card">
+                    <div class="card-body text-center">
+                        <div style="height:160px;width:250px" class="partners-img-align">
+                            <img src="img/partners/extensi.png" width="100%" style="margin-top: 40px;"/>
+                        </div>
+                        
+                        <h6 class="partner-name">Extensi</h6>
+                    <p class="card-text">Extensi helps and supports companies in implementation and integration of CRM solutions by SAP, in order to optimize their business processes.
+                        Extensi specialized in SAP CRM solutions, ensuring a smooth integration into company information systems.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card cardBg cardBg-blue scaleanim">
+                <a href="https://www.neosight.fr/" target="_blank" class="navigation-card">
+                    <div class="card-body text-center">
+                        <div style="height:160px;width:250px" class="partners-img-align">
+                            <img src="img/partners/neosight-logo.png" width="100%" />
+                        </div>
+                        
+                        <h6 class="partner-name">Neosight</h6>
+                    <p class="card-text">Neosight is a consulting company dedicated to SAP projects and solutions, whose vocation is to 
+                        support large French and international companies on all aspects of the transformation of their information system.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card cardBg cardBg-blue scaleanim">
+                <a href="https://www.keyperformance-consulting.com/" target="_blank" class="navigation-card">
+                    <div class="card-body text-center">
+                        <div style="height:160px;width:250px" class="partners-img-align">
+                            <img src="img/partners/kpc.png" width="100%" />
+                        </div>
+                        
+                        <h6 class="partner-name">Key Performance Consulting</h6>
+                    <p class="card-text">Technical expertise and transversal vision of your entire SAP ecosystem (FP&A, BI, On Premise and / or Cloud, etc.)
+                        KPC is Gold partner and PCOE: software maintenance center, sale and administration of licenses, management and support of platforms.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card cardBg scaleanim">
+                <a href="https://www.apsia.eu/" target="_blank" class="navigation-card">
+                    <div class="card-body text-center">
                     <div style="height:160px;width:250px" class="partners-img-align">
-                        <img src="img/partners/duonext.png" width="100%" />
+                        <img src="img/partners/apsia.png" width="100%" />
                     </div>
                     
-                    <h6 class="partner-name">Duonext</h6>
-                  <p class="card-text">For more than 10 years, Duonext advises and supports its clients in the design and integration of ERP, 
-                      BPM and business intelligence solutions.</p>
-                </div>
-            </div>
-
-            <div class="card cardBg">
-                <div class="card-body text-center">
-                    <div style="height:160px;width:250px" class="partners-img-align">
-                        <img src="img/partners/extensi.png" width="100%" style="margin-top: 40px;"/>
+                    <h6 class="partner-name">Apsia</h6>
+                    <p class="card-text">Apsia, one-stop shop for digital transformation, supports SMEs and mid-caps. 
+                        Implementing management software (ERP and CRM). advise, innovate and build business information systems, with full responsibility.</p>
                     </div>
-                    
-                    <h6 class="partner-name">Extensi</h6>
-                  <p class="card-text">Extensi helps and supports companies in implementation and integration of CRM solutions by SAP, in order to optimize their business processes.
-                    Extensi specialized in SAP CRM solutions, ensuring a smooth integration into company information systems.</p>
-                </div>
+                </a>
             </div>
-
-            <div class="card cardBg cardBg-blue">
-                <div class="card-body text-center">
-                    <div style="height:160px;width:250px" class="partners-img-align">
-                        <img src="img/partners/neosight-logo.png" width="100%" />
-                    </div>
-                    
-                    <h6 class="partner-name">Neosight</h6>
-                  <p class="card-text">Neosight is a consulting company dedicated to SAP projects and solutions, whose vocation is to 
-                    support large French and international companies on all aspects of the transformation of their information system.</p>
-                </div>
-            </div>
-
-            <div class="card cardBg cardBg-blue">
-                <div class="card-body text-center">
-                    <div style="height:160px;width:250px" class="partners-img-align">
-                        <img src="img/partners/kpc.png" width="100%" />
-                    </div>
-                    
-                    <h6 class="partner-name">Key Performance Consulting</h6>
-                  <p class="card-text">Technical expertise and transversal vision of your entire SAP ecosystem (FP&A, BI, On Premise and / or Cloud, etc.)
-                    KPC is Gold partner and PCOE: software maintenance center, sale and administration of licenses, management and support of platforms.</p>
-                </div>
-            </div>
-
-            <div class="card cardBg">
-                <div class="card-body text-center">
-                  <div style="height:160px;width:250px" class="partners-img-align">
-                      <img src="img/partners/apsia.png" width="100%" />
-                  </div>
-                  
-                  <h6 class="partner-name">Apsia</h6>
-                  <p class="card-text">Apsia, one-stop shop for digital transformation, supports SMEs and mid-caps. 
-                    Implementing management software (ERP and CRM). advise, innovate and build business information systems, with full responsibility.</p>
-                </div>
-              </div>
 
             
         </div>
@@ -962,6 +969,45 @@ The application was developed on SCP and interfaced with SAP C4C and CTI.
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
     });
+
+    $(window).scroll(function(){
+        $(".slideanim-X").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide-X");
+                }
+        });
+
+        $(".scaleanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("scale-animation");
+                }
+        });
+
+        $(".slideanim-X-Inv").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide-X-Inv");
+                }
+        });
+
+        $(".slideanim-Y-Inv").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide-Y-Inv");
+                }
+        });
+    })
+   
 
     function openContact(){
 
