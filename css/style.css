@@ -2,6 +2,8 @@
     --olive-green: #5cb85c;
     --svg-color:   #67FF63;
     --background: #1bbc9b;
+
+    --mobile-small-width: 520px;
   }
 
   body{
@@ -833,3 +835,29 @@ margin-top: 10px;
     -webkit-transform: translateX(0%);
   }
 }
+
+
+/* Media queries for small screens*/
+@media screen and (max-width: 570px) {
+    .navbar-nav {
+        background-color: #fff;
+      }
+      .carousel-inner img{
+        width: 100%;
+        height: auto;
+    }
+      .aboutUs img{
+            width: 100%;
+            height: auto;
+      }
+      .partners-img-align{
+          padding-top: 10%;
+          margin: auto;
+      }
+      .team-picture{
+        width: 100%;
+        height: auto;
+      }
+  }
+
+  /* Media queries for medium resolution screens */
