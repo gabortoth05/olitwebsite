@@ -383,6 +383,10 @@ Service section
     height: 300px !important;
 }
 
+.service-box-extend{
+    height:360px !important
+}
+
 .servicesBox{
 
     position: relative;
@@ -870,7 +874,11 @@ margin-top: 10px;
            height: 258px !important;
        }
        .service-box{
-        height: unset;
+        height: unset !important;
+        }
+
+        .service-box-extend{
+            height: unset !important;
         }
   }
 
@@ -895,6 +903,12 @@ margin-top: 10px;
       .team-picture{
         width: 100%;
         height: auto;
+        }
+        .service-box{
+            height: unset !important;
+            }
+        .service-box-extend{
+            height: unset !important;
         }
         
   }
