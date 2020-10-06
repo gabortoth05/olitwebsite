@@ -866,6 +866,9 @@ margin-top: 10px;
       .navbar-bigger{
           height: unset;
        }
+       .rect-image{
+           height: 280px !important;
+       }
   }
 
   /* Media queries for medium resolution screens */
