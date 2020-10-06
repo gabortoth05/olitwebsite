@@ -841,23 +841,48 @@ margin-top: 10px;
 @media screen and (max-width: 570px) {
     .navbar-nav {
         background-color: #fff;
+        }
+      .carousel-inner img{
+        width: 100%;
+        height: auto;
+        }
+      .aboutUs img{
+            width: 100%;
+            height: auto;
+        }
+      .partners-img-align{
+          padding-top: 10%;
+          margin: auto;
+        }
+      .team-picture{
+        width: 100%;
+        height: auto;
+        }
+      .navbar-bigger{
+          height: unset;
+       }
+  }
+
+  /* Media queries for medium resolution screens */
+
+  @media screen and (max-width: 1024px){
+      .navbar-bigger{
+          height: unset;
       }
       .carousel-inner img{
         width: 100%;
         height: auto;
-    }
+        }
       .aboutUs img{
             width: 100%;
             height: auto;
-      }
+        }
       .partners-img-align{
           padding-top: 10%;
           margin: auto;
-      }
+        }
       .team-picture{
         width: 100%;
         height: auto;
-      }
+        }
   }
-
-  /* Media queries for medium resolution screens */
