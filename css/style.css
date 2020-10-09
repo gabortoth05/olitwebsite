@@ -216,6 +216,10 @@ margin-left: 0
     border-radius: 10px;
 }
 
+.rect-image{
+    width:"535px";
+    height:"550px";
+}
 
 
 .howlist {
@@ -849,9 +853,9 @@ margin-top: 10px;
 /* Media queries for small screens*/
 @media screen and (max-width: 570px) {
     .navbar-nav {
-        background-color: #fff;
+        background-color: transparent;
         }
-      .carousel-inner img{
+      #aboutUs .carousel-inner img{
         width: 100%;
         height: auto;
         }
@@ -871,7 +875,7 @@ margin-top: 10px;
           height: unset;
        }
        .rect-image{
-           height: 258px !important;
+           height: 400px !important;
        }
        .service-box{
         height: unset !important;
@@ -879,6 +883,10 @@ margin-top: 10px;
 
         .service-box-extend{
             height: unset !important;
+        }
+
+        #aboutUs{
+            height: 260px;
         }
   }
 
@@ -888,7 +896,7 @@ margin-top: 10px;
       .navbar-bigger{
           height: unset;
       }
-      .carousel-inner img{
+      #aboutUs .carousel-inner img{
         width: 100%;
         height: auto;
         }
@@ -899,6 +907,9 @@ margin-top: 10px;
       .partners-img-align{
           padding-top: 10%;
           margin: auto;
+        }
+        .rect-image{
+            height: 400px !important;
         }
       .team-picture{
         width: 100%;
