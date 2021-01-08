@@ -217,8 +217,8 @@ margin-left: 0
 }
 
 .rect-image{
-    width:"535px";
-    height:"550px";
+    height: 100% !important;
+    width: 100% !important;
 }
 
 
