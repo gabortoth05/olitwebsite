@@ -24,6 +24,10 @@ body {
     width: 56px;
 }
 
+.logo-extensi{
+    width: 100px;
+}
+
 .contactUsButton{
     cursor: pointer;
     width: 50px;
@@ -135,6 +139,10 @@ Jumbotron
 }
 .welcomeText-sub{
     font-size: 2.5rem !important;
+}
+
+.welcomeText-sup{
+    font-size: 1.65rem !important;
 }
 
 .call-to-action{
@@ -493,7 +501,7 @@ Partners
 .cardBg{
     background-color: #e8fafa;
     box-shadow: 2px 2px 5px #333;
-    height:385px;
+    height:440px;
 }
 
 .cardBg-blue{
